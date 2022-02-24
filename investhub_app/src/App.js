@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Invest Hub Site
+          InvestHub Site
         </a>
       </header>
     </div>
