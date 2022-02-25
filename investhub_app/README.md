@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `cd ./investhub_app`
+
+cd into the cloned investhub application to begin getting connected!
+
+### `npm install`
+
+Installs npm
+
+### `npm install react-router-dom@6`
+
+Installs the latest version of react-router-dom we are using
+
 ## Available Scripts
 
 In the project directory, you can run:
