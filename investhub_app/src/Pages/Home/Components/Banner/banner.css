@@ -1,0 +1,15 @@
+/* Parent Container */
+.banner-content {
+    display: flex;
+
+    /* border: solid;
+    border-color: firebrick; */
+}
+
+/* Child Element */
+#investhub-banner {
+    max-width: 100%;
+
+    /* border: solid;
+    border-color: green; */
+}

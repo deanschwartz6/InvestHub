@@ -6,6 +6,7 @@ import './main.css';
 
 //Components Imports
 import Header from './Components/Header/Header.jsx';
+import Banner from './Components/Banner/Banner.jsx';
 
 //Assets Imports
 
@@ -15,6 +16,7 @@ function Main(){
     return (
         <div className="main-content">
             <Header />
+            <Banner />
         </div>
     );
 }
