@@ -5,7 +5,7 @@ import React from 'react';
 import './main.css';
 
 //Components Imports
-import Header from './Components/Header';
+import Header from './Components/Header/Header.jsx';
 
 //Assets Imports
 
