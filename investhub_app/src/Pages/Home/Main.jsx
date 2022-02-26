@@ -1,10 +1,20 @@
+//React Imports
 import React from 'react';
+
+//Style Imports
 import './main.css';
 
+//Components Imports
+import Header from './Components/Header';
+
+//Assets Imports
+
+
+//Main function
 function Main(){
     return (
         <div className="main-content">
-            <h1>This is the Main Page</h1>
+            <Header />
         </div>
     );
 }

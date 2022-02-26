@@ -1,0 +1,54 @@
+/* Parent container */
+.header {
+    background-color: #f0EFF3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: solid; */
+}
+
+/* Child Containers */
+#image-logo {
+    display: flex;
+    max-width: 7em;
+    max-height: 1em;
+    padding-left: 1em;
+
+    /* border: solid; */
+}
+
+.middle-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-right: 5em;
+
+    /* border: solid; */
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-right: 1em;
+
+    /* border: solid; */
+}
+
+/* Child Elements */
+.left-nav-element {
+    max-height: 2em;
+
+    /* border: solid; */
+}
+
+.right-nav-element {
+    align-items: center;
+    max-height: 2em;
+
+    /* border: solid; */
+}
+
+/* Stying Elements */
+
