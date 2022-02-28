@@ -1,0 +1,24 @@
+.current-offerings-content h3 {
+    padding-left: 1em;
+    color: #737373;
+}
+
+.current-offerings-hr {
+    margin-top: -.7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #FF6F4F;
+}
+
+.drop-down-selections {
+    display: flex;
+    justify-content: right;
+    padding-right: 1em;
+    padding-top: .2em;
+    padding-bottom: 1em;
+}
+
+.drop-down-tags {
+    display: flex;
+    justify-content: right;
+}

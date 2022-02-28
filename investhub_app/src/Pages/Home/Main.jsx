@@ -8,9 +8,7 @@ import './main.css';
 import Header from './Components/Header/Header.jsx';
 import Banner from './Components/Banner/Banner.jsx';
 import Information from './Components/Information/Information.jsx';
-
-//Assets Imports
-
+import Content from './Components/Content/Content.jsx';
 
 //Main function
 function Main(){
@@ -19,6 +17,7 @@ function Main(){
             <Header />
             <Banner />
             <Information />
+            <Content />
         </div>
     );
 }
