@@ -25,7 +25,7 @@
 .middle-card {
     display: flex;
     justify-content: space-between;
-    margin-bottom: -1em;
+    margin-bottom: -1.5em;
 }
 
 .middle-left {
@@ -33,6 +33,7 @@
     gap: .5em;
     padding-left: 1em;
     margin-top: -3.7em;
+    min-width: 70%;
 }
 
 .middle-right {
@@ -69,12 +70,18 @@
 
 .company-description {
     padding-left: 1em;
+    padding-right: .5em;
     color: #737373;
 }
 
 .bottom-card-last {
     display: flex;
     flex-direction: column;
+    margin-top: -1.5em;
+}
+
+.bottom-card-first {
+    min-height: 12em;
 }
 
 .industry-tag {
@@ -82,7 +89,7 @@
     align-self: left;
     margin-left: 1.5em;
     padding: .5em;
-    max-width: 4em;
+    width: fit-content;
 }
 
 .investment-status {
@@ -93,6 +100,13 @@
 
 .status-tag {
     background-color: #F0EFF3;
+    margin-left: 1em;
+    padding: .5em;
+    color: #FF6F4F;
+}
+
+.status-tag-alt {
+    background-color: #0E1C28;
     margin-left: 1em;
     padding: .5em;
     color: #FF6F4F;

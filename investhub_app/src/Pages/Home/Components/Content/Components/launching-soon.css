@@ -1,3 +1,7 @@
+.launching-soon-content {
+    padding-bottom: 5%;
+}
+
 .content-top {
     text-align: center;
     padding-top: 2em;
@@ -14,7 +18,7 @@
     margin-right: 1em;
 }
 
-.just-launched-hr {
+.launching-soon-hr {
     margin-left: 1em;
     margin-right: 1em;
     color: #737373;
@@ -22,6 +26,6 @@
 
 .cards-area {
     display: flex;
-    justify-content: space-between;
-    padding: 1em;
+    justify-content: left;
+    gap: 3.5%;
 }
