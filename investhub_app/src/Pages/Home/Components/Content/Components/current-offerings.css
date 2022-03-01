@@ -22,3 +22,7 @@
     display: flex;
     justify-content: right;
 }
+
+.drop-down-tags button {
+    margin-right: 1em;
+}

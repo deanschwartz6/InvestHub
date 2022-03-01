@@ -19,7 +19,7 @@ function CurrentOfferings(){
                 </select>
 
                 <button>
-                    SDG - Impact Investment <br /> Sustainable Development Goal
+                    SDG - Impact Investment <br/> Sustainable Development Goal
                 </button>
 
                 <select name="filter" className="drop-down-element filter">

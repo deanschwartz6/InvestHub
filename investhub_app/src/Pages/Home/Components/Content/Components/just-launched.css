@@ -1,0 +1,28 @@
+.content-top {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.content-top h3 {
+    display: inline;
+    color: #FF6F4F;
+    /* Temporary "Hack" to position to center */
+    padding-left: 5em;
+}
+
+.arrow-buttons {
+    float: right;
+    margin-right: 1em;
+}
+
+.just-launched-hr {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #737373;
+}
+
+.cards-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}

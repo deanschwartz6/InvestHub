@@ -14,6 +14,10 @@ Installs npm
 
 Installs the latest version of react-router-dom we are using
 
+### `npm install --save styled-components`
+
+Installs the latest version of styled-componenets that we are using for figma -> rendition 
+
 ## Available Scripts
 
 In the project directory, you can run:
