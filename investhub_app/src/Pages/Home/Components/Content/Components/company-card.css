@@ -2,7 +2,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-
+    width: 31%;
     border: solid;
     border-width: .1em;
 }
@@ -79,8 +79,8 @@
 
 .industry-tag {
     background-color: #CCCCCC;
-    align-self: center;
-    margin-right: 18em;
+    align-self: left;
+    margin-left: 1.5em;
     padding: .5em;
     max-width: 4em;
 }
