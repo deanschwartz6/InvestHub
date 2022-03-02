@@ -9,7 +9,7 @@
 
 .top-card {
     display: flex;
-    padding-bottom: 10em;
+    padding-bottom: 7em;
     background-position: center;
     background-size: cover;
     margin: .2em;
@@ -25,14 +25,14 @@
 .middle-card {
     display: flex;
     justify-content: space-between;
-    margin-bottom: -1.5em;
+    margin-bottom: -2em;
 }
 
 .middle-left {
     display: flex;
     gap: .5em;
     padding-left: 1em;
-    margin-top: -3.7em;
+    margin-top: -5em;
     min-width: 70%;
 }
 
@@ -52,8 +52,8 @@
     gap: .5em;
     background-color: #CCCCCC;
     height: 1.5em;
-    padding: .2em .5em;
-    margin-top: 2.8em;
+    padding: .155em .3em;
+    margin-top: 3.45em;
 }
 
 .country-flag {
@@ -77,7 +77,7 @@
 .bottom-card-last {
     display: flex;
     flex-direction: column;
-    margin-top: -1.5em;
+    margin-top: -2em;
 }
 
 .bottom-card-first {
