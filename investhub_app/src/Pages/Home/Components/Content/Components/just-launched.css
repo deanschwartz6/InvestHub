@@ -4,14 +4,24 @@
 }
 
 .content-top h3 {
-    display: inline;
+    margin-bottom: -1.1em;
     color: #FF6F4F;
-    padding-left: 5em;
+    font-size: 1.8em;
 }
 
 .arrow-buttons {
-    float: right;
+    display: flex;
+    justify-content: right;
+    gap: .5em;
     margin-right: 1em;
+}
+
+.left-arrow-btn {
+    width: 3%;
+}
+
+.right-arrow-btn {
+    width: 3%;
 }
 
 .just-launched-hr {

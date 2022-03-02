@@ -11,8 +11,7 @@
 /* Child Containers */
 #image-logo {
     display: flex;
-    max-width: 7em;
-    max-height: 1em;
+    max-height: 1.3em;
     padding-left: 1em;
 
     /* border: solid; */
@@ -37,11 +36,6 @@
 }
 
 /* Child Elements */
-.left-nav-element {
-    max-height: 2em;
-
-    /* border: solid; */
-}
 
 .right-nav-element {
     align-items: center;
@@ -52,3 +46,37 @@
 
 /* Stying Elements */
 
+.start-investing {
+    background: linear-gradient(to right, #FF6F4F, #E0FF4F);
+    padding: .3em .5em;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    max-width: 10em;
+}
+
+.raise-capital {
+    border: solid;
+    border-width: .15em;
+    border-color: #E0FF4F;
+    padding: .2em .5em;
+    text-decoration: none;
+    color: #0E1C28;
+}
+
+.login {
+    background: transparent;
+    border: solid;
+    border-color: #f0EFF3;
+    font-size: 1rem;
+}
+
+.sign-up {
+    background: #E0FF4F;
+    padding: .2em 1em;
+    font-size: .9rem;
+    border: solid;
+    border-color: #f0EFF3;
+}

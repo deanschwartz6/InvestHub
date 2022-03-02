@@ -9,14 +9,18 @@ import konzortiaBackground from '../../../../../Assets/konzortia-card-image.svg'
 import konzortiaLogo from '../../../../../Assets/konzortia-card-logo.svg';
 import unitedStatesFlag from '../../../../../Assets/US-flag-card.svg';
 
+//Assets Imports
+import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
+
 function JustLaunched(){
     return (
         <div className="just-launched-content">
             <div className="content-top">
                 <h3>JUST LAUNCHED</h3>
                 <div className="arrow-buttons">
-                    <button>left</button>
-                    <button>right</button>
+                    <img src={darkArrowLeft} alt="" className="left-arrow-btn" />
+                    <img src={lightArrowRight} alt="" className="right-arrow-btn" />
                 </div>
             </div>
             <hr className="just-launched-hr" />

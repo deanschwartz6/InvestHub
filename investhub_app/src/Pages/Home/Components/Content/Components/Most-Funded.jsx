@@ -1,11 +1,12 @@
 import React from 'react';
-import './most-funded.css';
 import CompanyCard from './Company-Card.jsx';
 
 //Assets Imports
 import nakedBackground from '../../../../../Assets/naked-collective-image.svg';
 import irelandFlag from '../../../../../Assets/ireland-flag-card.svg';
 import nakedCollectiveLogo from '../../../../../Assets/naked-collective-logo.svg';
+import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
 
 function MostFunded(){
     return(
@@ -13,8 +14,8 @@ function MostFunded(){
             <div className="content-top">
                 <h3>MOST FUNDED</h3>
                 <div className="arrow-buttons">
-                    <button>left</button>
-                    <button>right</button>
+                    <img src={darkArrowLeft} alt="" className="left-arrow-btn" />
+                    <img src={lightArrowRight} alt="" className="right-arrow-btn" />
                 </div>
             </div>
             <hr className="most-funded-hr" />

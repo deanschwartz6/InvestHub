@@ -1,5 +1,4 @@
 import React from 'react';
-import './closing-soon.css';
 import CompanyCard from './Company-Card.jsx';
 
 //Assets Imports
@@ -10,6 +9,8 @@ import fivePointsBackground from '../../../../../Assets/five-points-image.svg';
 import fivePointsLogo from '../../../../../Assets/five-points-logo.svg';
 import inspiraPharmaBackground from '../../../../../Assets/inspira-pharma-image.svg';
 import inspiraPharmaLogo from '../../../../../Assets/inspira-pharma-logo.svg';
+import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
 
 function MostFunded(){
     return(
@@ -17,8 +18,8 @@ function MostFunded(){
             <div className="content-top">
                 <h3>CLOSING SOON</h3>
                 <div className="arrow-buttons">
-                    <button>left</button>
-                    <button>right</button>
+                    <img src={darkArrowLeft} alt="" className="left-arrow-btn" />
+                    <img src={lightArrowRight} alt="" className="right-arrow-btn" />
                 </div>
             </div>
             <hr className="closing-soon-hr" />

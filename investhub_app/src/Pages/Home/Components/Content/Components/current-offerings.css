@@ -16,6 +16,7 @@
     padding-right: 1em;
     padding-top: .2em;
     padding-bottom: 1em;
+    gap: .2em;
 }
 
 .drop-down-tags {
@@ -25,4 +26,15 @@
 
 .drop-down-tags button {
     margin-right: 1em;
+    background: transparent;
+    border: solid;
+    border-color: #F0EFF3;
+}
+
+.drop-down-element {
+    background: transparent;
+    border: solid;
+    border-color: #F0EFF3;
+    outline: solid;
+    outline-width: .1em;
 }

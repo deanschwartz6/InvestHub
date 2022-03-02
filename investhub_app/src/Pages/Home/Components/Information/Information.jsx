@@ -9,7 +9,7 @@ function Information(){
                 <h4 className="top-text-elements">PROSPECTIVE INVESTORS<br/><span className="bottom-text-elements"><h2>510K</h2></span></h4>
                 <h4 className="top-text-elements">CURRENT OPPROTUNITIES<br/>
                     <span id="co-opportunities">
-                        <h3><span style={{ fontSize: "22px" }}>30</span><br/>Live</h3>
+                        <h3><span style={{ fontSize: "1.2em" }}>30</span><br/>Live</h3>
                         <h5>More Coming Soon!<br/><span style={{color: "#FF6F4F"}}>Secondary Market</span></h5>
                     </span>
                 </h4>

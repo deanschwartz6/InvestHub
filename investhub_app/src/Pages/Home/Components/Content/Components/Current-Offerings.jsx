@@ -18,7 +18,7 @@ function CurrentOfferings(){
                     <option value="fintech">FinTech</option>
                 </select>
 
-                <button>
+                <button className="drop-down-element sdg-button">
                     SDG - Impact Investment <br/> Sustainable Development Goal
                 </button>
 
@@ -34,7 +34,7 @@ function CurrentOfferings(){
 
             </div>
             <div className="drop-down-tags">
-                <button>Clear All</button>
+                <button>X Clear All</button>
             </div>
         </div>
     );
