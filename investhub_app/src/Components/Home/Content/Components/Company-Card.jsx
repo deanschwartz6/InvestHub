@@ -1,6 +1,6 @@
 import React from 'react';
 import './company-card.css';
-import starImg from '../../../../../Assets/card-star-button.svg';
+import starImg from '../../../../Assets/card-star-button.svg';
 
 
 function CompanyCard (props){
@@ -14,10 +14,10 @@ function CompanyCard (props){
                 <div className="middle-left">
                     <img src={props.companyLogo} alt="" className="company-logo" />
                     {props.companyInvestmentTag ? <h5 className="investment-type-tag" >{props.companyInvestmentTag}</h5> : null}
-                    <span className="second-tag">
+                    <div className="second-tag">
                         <img src={props.companyCountryFlag} alt="" className="country-flag" />
                         <h5 className="country-text" >{props.companyCountryABV}</h5>
-                    </span>
+                    </div>
                 </div>
                 <div className="middle-right">
                     <h5 className="time-left" >{props.timeLeft}</h5>

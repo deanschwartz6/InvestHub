@@ -5,10 +5,10 @@ import React from 'react';
 import './main.css';
 
 //Components Imports
-import Header from './Components/Header/Header.jsx';
-import Banner from './Components/Banner/Banner.jsx';
-import Information from './Components/Information/Information.jsx';
-import Content from './Components/Content/Content.jsx';
+import Header from '../../Components/Home/Header/Header.jsx';
+import Banner from '../../Components/Home/Banner/Banner.jsx';
+import Information from '../../Components/Home/Information/Information.jsx';
+import Content from '../../Components/Home/Content/Content.jsx';
 
 //Main function
 function Main(){

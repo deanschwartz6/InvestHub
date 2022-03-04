@@ -2,11 +2,11 @@ import React from 'react';
 import CompanyCard from './Company-Card.jsx';
 
 //Assets Imports
-import nakedBackground from '../../../../../Assets/naked-collective-image.svg';
-import irelandFlag from '../../../../../Assets/ireland-flag-card.svg';
-import nakedCollectiveLogo from '../../../../../Assets/naked-collective-logo.svg';
-import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
-import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
+import nakedBackground from '../../../../Assets/naked-collective-image.svg';
+import irelandFlag from '../../../../Assets/ireland-flag-card.svg';
+import nakedCollectiveLogo from '../../../../Assets/naked-collective-logo.svg';
+import darkArrowLeft from '../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../Assets/light-arrow-right.svg';
 
 function MostFunded(){
     return(

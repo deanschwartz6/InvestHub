@@ -2,15 +2,15 @@ import React from 'react';
 import CompanyCard from './Company-Card.jsx';
 
 //Assets Imports
-import fishyFilamentsBackground from '../../../../../Assets/fishy-filaments-image.svg';
-import unitedKingdomFlag from '../../../../../Assets/UK-flag-card.svg';
-import fishyFilamentsLogo from '../../../../../Assets/fishy-filaments-logo.svg';
-import fivePointsBackground from '../../../../../Assets/five-points-image.svg';
-import fivePointsLogo from '../../../../../Assets/five-points-logo.svg';
-import inspiraPharmaBackground from '../../../../../Assets/inspira-pharma-image.svg';
-import inspiraPharmaLogo from '../../../../../Assets/inspira-pharma-logo.svg';
-import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
-import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
+import fishyFilamentsBackground from '../../../../Assets/fishy-filaments-image.svg';
+import unitedKingdomFlag from '../../../../Assets/UK-flag-card.svg';
+import fishyFilamentsLogo from '../../../../Assets/fishy-filaments-logo.svg';
+import fivePointsBackground from '../../../../Assets/five-points-image.svg';
+import fivePointsLogo from '../../../../Assets/five-points-logo.svg';
+import inspiraPharmaBackground from '../../../../Assets/inspira-pharma-image.svg';
+import inspiraPharmaLogo from '../../../../Assets/inspira-pharma-logo.svg';
+import darkArrowLeft from '../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../Assets/light-arrow-right.svg';
 
 function MostFunded(){
     return(

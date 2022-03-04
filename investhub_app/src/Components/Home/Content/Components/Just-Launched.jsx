@@ -5,13 +5,13 @@ import './just-launched.css';
 import CompanyCard from './Company-Card.jsx';
 
 //Company Card Imports
-import konzortiaBackground from '../../../../../Assets/konzortia-card-image.svg';
-import konzortiaLogo from '../../../../../Assets/konzortia-card-logo.svg';
-import unitedStatesFlag from '../../../../../Assets/US-flag-card.svg';
+import konzortiaBackground from '../../../../Assets/konzortia-card-image.svg';
+import konzortiaLogo from '../../../../Assets/konzortia-card-logo.svg';
+import unitedStatesFlag from '../../../../Assets/US-flag-card.svg';
 
 //Assets Imports
-import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
-import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
+import darkArrowLeft from '../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../Assets/light-arrow-right.svg';
 
 function JustLaunched(){
     return (

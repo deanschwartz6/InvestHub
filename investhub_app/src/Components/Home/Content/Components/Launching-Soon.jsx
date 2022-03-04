@@ -2,16 +2,16 @@ import React from 'react';
 import CompanyCard from './Company-Card.jsx';
 
 //Assets Imports
-import horseGuardBackground from '../../../../../Assets/horse-guard-image.svg';
-import unitedKingdomFlag from '../../../../../Assets/UK-flag-card.svg';
-import horseGuardLogo from '../../../../../Assets/horse-guard-logo.svg';
-import valkyrieBackground from '../../../../../Assets/valkyrie-industries-image.svg';
-import valkyrieLogo from '../../../../../Assets/valkyrie-industries-logo.svg'
-import nakedBackground from '../../../../../Assets/naked-collective-image.svg';
-import irelandFlag from '../../../../../Assets/ireland-flag-card.svg';
-import nakedCollectiveLogo from '../../../../../Assets/naked-collective-logo.svg';
-import darkArrowLeft from '../../../../../Assets/dark-arrow-left.svg';
-import lightArrowRight from '../../../../../Assets/light-arrow-right.svg';
+import horseGuardBackground from '../../../../Assets/horse-guard-image.svg';
+import unitedKingdomFlag from '../../../../Assets/UK-flag-card.svg';
+import horseGuardLogo from '../../../../Assets/horse-guard-logo.svg';
+import valkyrieBackground from '../../../../Assets/valkyrie-industries-image.svg';
+import valkyrieLogo from '../../../../Assets/valkyrie-industries-logo.svg'
+import nakedBackground from '../../../../Assets/naked-collective-image.svg';
+import irelandFlag from '../../../../Assets/ireland-flag-card.svg';
+import nakedCollectiveLogo from '../../../../Assets/naked-collective-logo.svg';
+import darkArrowLeft from '../../../../Assets/dark-arrow-left.svg';
+import lightArrowRight from '../../../../Assets/light-arrow-right.svg';
 
 function MostFunded(){
     return(
