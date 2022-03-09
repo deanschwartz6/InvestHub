@@ -1,8 +1,6 @@
 //React Imports
 import React from 'react';
-
-//Style Imports
-import './main.css';
+import styled from 'styled-components';
 
 //Components Imports
 import Header from '../../Components/Home/Header/Header.jsx';
@@ -13,13 +11,17 @@ import Content from '../../Components/Home/Content/Content.jsx';
 //Main function
 function Main(){
     return (
-        <div className="main-content">
+        <MainContent>
             <Header />
             <Banner />
             <Information />
             <Content />
-        </div>
+        </MainContent>
     );
 }
+
+const MainContent = styled.div`
+    display: grid;
+`
 
 export default Main;

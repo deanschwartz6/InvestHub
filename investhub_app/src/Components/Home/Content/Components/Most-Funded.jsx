@@ -24,7 +24,7 @@ function MostFunded(){
                     companyBackgroundImg={nakedBackground}
                     companyStatus="Most Funded"
                     companyLogo={nakedCollectiveLogo}
-                    companyInvestmentTag="Convert"
+                    companyInvestmentTag="Convertable"
                     companyCountryFlag={irelandFlag}
                     companyCountryABV="IR"
                     timeLeft="9 Days Left"

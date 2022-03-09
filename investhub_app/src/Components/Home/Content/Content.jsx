@@ -1,5 +1,5 @@
 import React from 'react';
-import './content.css';
+import styled from 'styled-components';
 
 //Components Imports
 import CurrentOfferings from './Components/Current-Offerings.jsx';
@@ -10,14 +10,16 @@ import LaunchingSoon from './Components/Launching-Soon.jsx';
 
 function Content(){
     return(
-        <div className="content-area">
+        <ContentAreaDiv>
             <CurrentOfferings />
             <JustLaunched />
             <MostFunded />
             <ClosingSoon />
             <LaunchingSoon />
-        </div>
+        </ContentAreaDiv>
     );
 }
+
+const ContentAreaDiv = styled.div` background-color: #F0EFF3; `;
 
 export default Content;
