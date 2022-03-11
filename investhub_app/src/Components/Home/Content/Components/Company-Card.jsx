@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import starImg from '../../../../Assets/card-star-button.svg';
-import StarOnClickHelper from '../../../../Helpers/StarOnClickHelper.jsx';
 
+function StarOnClickHelper(){
+    console.log("Clicked Star");
+}
+
+function CardOnClickHelper(){
+    console.log("Clicked Company Card");
+}
 
 function CompanyCard (props){
 
@@ -74,6 +80,9 @@ const TopRightStar = styled.img.attrs({
 })`
     width: 12%;
     padding-right: 1em;
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 const MiddleCardDiv = styled.div`
@@ -88,10 +97,14 @@ const MiddleCardDiv = styled.div`
 
 const CompanyLogoImg = styled.img.attrs({
     alt: "",
+    onClick: CardOnClickHelper,
 })`
     max-width: 40%;
     max-height: 80%;
     padding-left: 1em;
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 const CompanyInvestmentTag = styled.h5`
@@ -117,8 +130,13 @@ const CountryFlagImg = styled.img`
 
 const CountryText = styled.h5``;
 
-const BottomCardTop = styled.div`
+const BottomCardTop = styled.div.attrs({
+    onClick: CardOnClickHelper,
+})`
     min-height: 12em;
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 const CompanyName = styled.h3`

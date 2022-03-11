@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../Assets/logo.svg';
 
+function LogoOnCLickHelper(){
+    console.log("Clicked Logo");
+}
+
 function Header(){
     return(
         <HeaderContainer>
@@ -28,10 +32,15 @@ const HeaderContainer = styled.header`
     align-items: center;
 `;
 
-const ImgLogo = styled.img `
+const ImgLogo = styled.img.attrs({
+    onClick: LogoOnCLickHelper,
+})`
     display: flex;
     max-height: 1.3em;
     padding-left: 1em;
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 const MiddleContent = styled.div`
