@@ -8,33 +8,36 @@ function CurrentOfferings(){
             <CurrentOfferingsHr />
             <DropDownSelections>
 
-                <StyledSelect region name="region" >
-                    <StyledOption value="" disabled selected hidden >Region</StyledOption>
-                    <StyledOption value="united_states">United States</StyledOption>
-                </StyledSelect>
-
-                <StyledSelect industry name="industry" >
-                    <StyledOption value="" disabled selected hidden >Industry</StyledOption>
-                    <StyledOption value="fintech">FinTech</StyledOption>
-                </StyledSelect>
-
-                <SdgGroupDiv>
+                <SdgDiv>
                     <StyledH4>SDG - <StyledSpan>Impact Investment</StyledSpan></StyledH4>
-                    <StyledSelect sdg name="sdg-impact" >        
-                        <StyledOption value="" disabled selected hidden >Sustainable Development Goal</StyledOption>
-                        <StyledOption value="sdg-placeholder">Testing placeholder</StyledOption>
+                </SdgDiv>
+
+                <DropDownDiv>
+                    <StyledSelect region name="region" >
+                        <StyledOption value="" disabled selected hidden >Region</StyledOption>
+                        <StyledOption value="united_states">United States</StyledOption>
                     </StyledSelect>
-                </SdgGroupDiv>
 
-                <StyledSelect filter name="filter" >
-                    <StyledOption value="" disabled selected hidden>Filter By</StyledOption>
-                    <StyledOption value="just-launched">Just Launched</StyledOption>
-                </StyledSelect>
+                    <StyledSelect industry name="industry" >
+                        <StyledOption value="" disabled selected hidden >Industry</StyledOption>
+                        <StyledOption value="fintech">FinTech</StyledOption>
+                    </StyledSelect>
 
-                <StyledSelect mostFunded name="most-funded" >
-                    <StyledOption value="" disabled selected hidden>Most Funded</StyledOption>
-                    <StyledOption value="konzortia_capital">Konzortia Capital</StyledOption>
-                </StyledSelect>
+                    <StyledSelect sdg name="sdg-impact" >        
+                            <StyledOption value="" disabled selected hidden >Sustainable Development Goal</StyledOption>
+                            <StyledOption value="sdg-placeholder">Testing placeholder</StyledOption>
+                    </StyledSelect>
+
+                    <StyledSelect filter name="filter" >
+                        <StyledOption value="" disabled selected hidden>Filter By</StyledOption>
+                        <StyledOption value="just-launched">Just Launched</StyledOption>
+                    </StyledSelect>
+
+                    <StyledSelect mostFunded name="most-funded" >
+                        <StyledOption value="" disabled selected hidden>Most Funded</StyledOption>
+                        <StyledOption value="konzortia_capital">Konzortia Capital</StyledOption>
+                    </StyledSelect>
+                </DropDownDiv>
 
             </DropDownSelections>
             <DropDownTagsDiv>
@@ -59,37 +62,42 @@ const CurrentOfferingsHr = styled.hr`
 `;
 
 const DropDownSelections = styled.div`
-    display: flex;
-    justify-content: right;
     padding-right: 1em;
     padding-top: .2em;
     padding-bottom: 1em;
+`;
+
+const DropDownDiv = styled.div`
+    display: flex;
+    justify-content: right;
     gap: .2em;
 `;
 
 const StyledSelect = styled.select`
     max-width: ${props => props.sdg ? '17em' : '8em' };
-    min-width: ${props => props.sdg ? '16em' : '7em'};
+    min-width: ${props => props.sdg ? '17em' : '8em'};
     background: transparent;
     border: solid;
     border-color: #F0EFF3;
     border-left: solid;
     border-right: solid;
     border-bottom: solid;
+    border-width: .1em;
 `;
 
 const StyledOption = styled.option``;
 
-const SdgGroupDiv = styled.div`
+const SdgDiv = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: right;
+    padding-top: .5em;
 `;
 
 const StyledH4 = styled.h4`
     font-size: .65em;
     margin-top: -1em;
     margin-bottom: .15em;
+    margin-right: 31em;
 `;
 
 const StyledSpan = styled.span`
@@ -101,6 +109,7 @@ const StyledSpan = styled.span`
 const DropDownTagsDiv = styled.div`
     display: flex;
     justify-content: right;
+    padding-top: 1em;
 `;
 
 const ClearButton = styled.button`

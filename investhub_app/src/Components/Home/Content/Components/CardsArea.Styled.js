@@ -1,37 +1,37 @@
-.content-top {
+import styled from 'styled-components';
+
+export const ContentContainerDiv = styled.div``;
+
+export const ContentTopDiv = styled.div`
     text-align: center;
     padding-top: 2em;
-}
+`;
 
-.content-top h3 {
+export const TitleH3 = styled.h3`
     margin-bottom: -1.1em;
     color: #FF6F4F;
     font-size: 1.8em;
-}
+`;
 
-.arrow-buttons {
+export const ArrowButtonsDiv = styled.div`
     display: flex;
     justify-content: right;
     gap: .5em;
     margin-right: 1em;
-}
+`;
 
-.left-arrow-btn {
+export const ImgButton = styled.img`
     width: 3%;
-}
+`;
 
-.right-arrow-btn {
-    width: 3%;
-}
-
-.just-launched-hr {
+export const StyledHr = styled.hr`
     margin-left: 1em;
     margin-right: 1em;
     color: #737373;
-}
+`;
 
-.cards-area {
+export const CardsAreaDiv = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1em;
-}
+`;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContentContainerDiv, ContentTopDiv, TitleH3, ArrowButtonsDiv, ImgButton, StyledHr, CardsAreaDiv } from './CardsArea.Styled';
 import CompanyCard from './Company-Card.jsx';
 
 //Assets Imports
@@ -15,16 +16,16 @@ import lightArrowRight from '../../../../Assets/light-arrow-right.svg';
 
 function MostFunded(){
     return(
-        <div className="launching-soon-content">
-            <div className="content-top">
-                <h3>LAUNCHING SOON</h3>
-                <div className="arrow-buttons">
-                    <img src={darkArrowLeft} alt="" className="left-arrow-btn" />
-                    <img src={lightArrowRight} alt="" className="right-arrow-btn" />
-                </div>
-            </div>
-            <hr className="launching-soon-hr" />
-            <div className="cards-area">
+        <ContentContainerDiv>
+            <ContentTopDiv>
+                <TitleH3>LAUNCHING SOON</TitleH3>
+                <ArrowButtonsDiv>
+                    <ImgButton src={darkArrowLeft} alt="" />
+                    <ImgButton src={lightArrowRight} alt="" />
+                </ArrowButtonsDiv>
+            </ContentTopDiv>
+            <StyledHr />
+            <CardsAreaDiv>
                 <CompanyCard 
                     companyBackgroundImg={horseGuardBackground}
                     companyStatus="Coming Soon"
@@ -64,8 +65,8 @@ function MostFunded(){
                     companyIndustryTag="Food & Beverage"
                     companyInvestmentStatus="Reg D via InvestHub, LLC"
                 />
-            </div>
-        </div>
+            </CardsAreaDiv>
+        </ContentContainerDiv>
     );
 }
 

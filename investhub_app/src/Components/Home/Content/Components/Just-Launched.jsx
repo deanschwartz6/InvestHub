@@ -1,5 +1,5 @@
 import React from 'react';
-import './just-launched.css';
+import { ContentContainerDiv, ContentTopDiv, TitleH3, ArrowButtonsDiv, ImgButton, StyledHr, CardsAreaDiv } from './CardsArea.Styled';
 
 //Components Imports
 import CompanyCard from './Company-Card.jsx';
@@ -15,16 +15,16 @@ import lightArrowRight from '../../../../Assets/light-arrow-right.svg';
 
 function JustLaunched(){
     return (
-        <div className="just-launched-content">
-            <div className="content-top">
-                <h3>JUST LAUNCHED</h3>
-                <div className="arrow-buttons">
-                    <img src={darkArrowLeft} alt="" className="left-arrow-btn" />
-                    <img src={lightArrowRight} alt="" className="right-arrow-btn" />
-                </div>
-            </div>
-            <hr className="just-launched-hr" />
-            <div className="cards-area">
+        <ContentContainerDiv>
+            <ContentTopDiv>
+                <TitleH3>JUST LAUNCHED</TitleH3>
+                <ArrowButtonsDiv>
+                    <ImgButton src={darkArrowLeft} alt="" />
+                    <ImgButton src={lightArrowRight} alt="" />
+                </ArrowButtonsDiv>
+            </ContentTopDiv>
+            <StyledHr />
+            <CardsAreaDiv>
                 <CompanyCard 
                     companyBackgroundImg={konzortiaBackground}
                     companyStatus="Just Launched"
@@ -38,8 +38,8 @@ function JustLaunched(){
                     companyIndustryTag="FinTech"
                     companyInvestmentStatus="Reg D via InvestHub, LLC"
                 />
-            </div>
-        </div>
+            </CardsAreaDiv>
+        </ContentContainerDiv>
     );
 }
 
