@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
-import './app.css';
-import Main from './Pages/Home/Main.jsx';
-import NotFound from './Helpers/NotFound.jsx';
+import styled from 'styled-components';
+import Main from './Pages/Home/Main';
+import CompanyInvestPage from './Pages/CompanyInvest/CompanyInvestPage';
+import Invest from './Pages/Invest/Invest';
+import NotFound from './Helpers/NotFound';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
   return (
-    <div className="app">
+    <ContentWrapper>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" 
+            element={<Main 
+              loggedIn={loggedIn} 
+              setLoggedIn={setLoggedIn} 
+            />} 
+          />
+          <Route path="/company" 
+            element={<CompanyInvestPage 
+            />} 
+          />
+          <Route path="/invest" 
+            element={<Invest 
+            />} 
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
-    </div>
+    </ContentWrapper>
   );
 }
+
+const ContentWrapper = styled.div`
+  display: grid;
+  margin: -.4em;
+`;
 
 export default App;

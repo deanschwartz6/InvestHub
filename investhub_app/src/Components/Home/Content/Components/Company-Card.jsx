@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import starImg from '../../../../Assets/card-star-button.svg';
+import { Link } from 'react-router-dom';
 
 function StarOnClickHelper(){
     console.log("Clicked Star");
-}
-
-function CardOnClickHelper(){
-    console.log("Clicked Company Card");
 }
 
 function CompanyCard (props){
@@ -19,17 +16,19 @@ function CompanyCard (props){
                 <TopRightStar src={starImg} />
             </TopCardDiv>
             <MiddleCardDiv>
-                    <CompanyLogoImg src={props.companyLogo} />
+                    <StyledLink to="/company" ><CompanyLogoImg src={props.companyLogo} /></StyledLink>
                     {props.companyInvestmentTag ? <CompanyInvestmentTag>{props.companyInvestmentTag}</CompanyInvestmentTag> : null}
                     <SecondTagDiv>
                         <CountryFlagImg src={props.companyCountryFlag} />
                         <CountryText>{props.companyCountryABV}</CountryText>
                     </SecondTagDiv>
             </MiddleCardDiv>
-            <BottomCardTop>
-                <CompanyName>{props.companyName}</CompanyName>
-                <CompanyDescription>{props.companyDescription}</CompanyDescription>
-            </BottomCardTop>
+            <CompanyLink to="/company">
+                <BottomCardTop>
+                    <CompanyName>{props.companyName}</CompanyName>
+                    <CompanyDescription>{props.companyDescription}</CompanyDescription>
+                </BottomCardTop>
+            </CompanyLink>
             <BottomCardBottom>
                 <TagGroup>
                     <IndustryTag>{props.companyIndustryTag}</IndustryTag>
@@ -65,6 +64,7 @@ const StatusTag = styled.h3`
     margin-left: 1em;
     padding: .3em;
     color: #FF6F4F;
+    font-family: Vision Regular;
 `;
 
 const StatusTagAlt = styled.h3`
@@ -72,6 +72,7 @@ const StatusTagAlt = styled.h3`
     margin-left: 1em;
     padding: .3em;
     color: #FF6F4F;
+    font-family: Vision Regular;
 `;
 
 const TopRightStar = styled.img.attrs({
@@ -95,11 +96,14 @@ const MiddleCardDiv = styled.div`
     margin-bottom: -1em;
 `;
 
-const CompanyLogoImg = styled.img.attrs({
-    alt: "",
-    onClick: CardOnClickHelper,
-})`
-    max-width: 40%;
+const StyledLink = styled(Link)`
+    width: 45%;
+    margin-right: -12%;
+    margin-bottom: 1em;
+`;
+
+const CompanyLogoImg = styled.img`
+    max-width: 60%;
     max-height: 80%;
     padding-left: 1em;
     &:hover{
@@ -113,6 +117,7 @@ const CompanyInvestmentTag = styled.h5`
     align-items: center;
     height: 30%;
     padding: 0em .5em;
+    font-family: Noah Regular;
 `;
 
 const SecondTagDiv = styled.div`
@@ -128,11 +133,16 @@ const CountryFlagImg = styled.img`
     padding-left: .5em;
 `;
 
-const CountryText = styled.h5``;
+const CountryText = styled.h5`
+    font-family: Noah Regular;
+`;
 
-const BottomCardTop = styled.div.attrs({
-    onClick: CardOnClickHelper,
-})`
+const CompanyLink = styled(Link)`
+    text-decoration: none;
+    color: black;
+`;
+
+const BottomCardTop = styled.div`
     min-height: 12em;
     &:hover{
         cursor: pointer;
@@ -141,12 +151,14 @@ const BottomCardTop = styled.div.attrs({
 
 const CompanyName = styled.h3`
     padding-left: 1em;
+    font-family: Noah Regular;
 `;
 
 const CompanyDescription = styled.p`
     padding-left: 1em;
     padding-right: .5em;
     color: #737373;
+    font-family: Vision Light;
 `;
 
 const BottomCardBottom = styled.div`
@@ -168,17 +180,21 @@ const IndustryTag = styled.h5`
     margin-left: 1.5em;
     padding: .5em 1em;
     width: fit-content;
+    font-family: Noah Regular;
 `;
 
 const TimeLeft = styled.h5`
     color:#FF6F4F;
     padding-right: 1em;
+    font-family: Vision Regular;
 `;
 
 const InvestmentStatus = styled.h5`
     padding-left: 1em;
+    padding-bottom: .5em;
     margin-top: -1em;
     color: #737373;
+    font-family: Vision Regular;
 `;
 
 export default CompanyCard;

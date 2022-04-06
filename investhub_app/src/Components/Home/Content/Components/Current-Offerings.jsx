@@ -52,6 +52,7 @@ const CurrentOfferingsDiv = styled.div``;
 const StyledH3 = styled.h3`
     padding-left: 1em;
     color: #737373;
+    font-family: Noah Regular;
 `;
 
 const CurrentOfferingsHr = styled.hr`
@@ -83,6 +84,7 @@ const StyledSelect = styled.select`
     border-right: solid;
     border-bottom: solid;
     border-width: .1em;
+    font-family: Vision Regular;
 `;
 
 const StyledOption = styled.option``;
@@ -98,6 +100,7 @@ const StyledH4 = styled.h4`
     margin-top: -1em;
     margin-bottom: .15em;
     margin-right: 31em;
+    font-famliy: Vision Regular;
 `;
 
 const StyledSpan = styled.span`
@@ -117,6 +120,7 @@ const ClearButton = styled.button`
     background: transparent;
     border: solid;
     border-color: #F0EFF3;
+    font-family: Vision Regular;
 `;
 
 

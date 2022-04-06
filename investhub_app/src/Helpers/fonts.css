@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Noah Bold';
+    src: local('Noah Bold'), url(../Assets/fonts/noah-bold.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Noah Bold Italic';
+    src: local('Noah Bold Italic'), url(../Assets/fonts/noah-bolditalic.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Noah Regular';
+    src: local('Noah Regular'), url(../Assets/fonts/noah-regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Noah Regular Italic';
+    src: local('Noah Regular Italic'), url(../Assets/fonts/noah-regularitalic.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+font-family: 'Vision Bold';
+src: local('Vision Bold'), url(../Assets/fonts/Vision-Bold.otf) format('opentype');
+/* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Vision Bold Italic';
+    src: local('Vision Bold Italic'), url(../Assets/fonts/Vision-BoldItalic.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Vision Regular';
+    src: local('Vision Regular'), url(../Assets/fonts/Vision-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Vision Light';
+    src: local('Vision Light'), url(../Assets/fonts/Vision-Light.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+

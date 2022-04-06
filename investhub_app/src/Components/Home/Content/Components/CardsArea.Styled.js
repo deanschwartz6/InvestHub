@@ -11,6 +11,7 @@ export const TitleH3 = styled.h3`
     margin-bottom: -1.1em;
     color: #FF6F4F;
     font-size: 1.8em;
+    font-family: Noah Regular;
 `;
 
 export const ArrowButtonsDiv = styled.div`

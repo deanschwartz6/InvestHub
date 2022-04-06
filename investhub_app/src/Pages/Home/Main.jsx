@@ -9,10 +9,10 @@ import Information from '../../Components/Home/Information/Information.jsx';
 import Content from '../../Components/Home/Content/Content.jsx';
 
 //Main function
-function Main(){
+function Main({loggedIn, setLoggedIn}){
     return (
         <MainContent>
-            <Header />
+            <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
             <Banner />
             <Information />
             <Content />
