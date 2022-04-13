@@ -9,10 +9,13 @@ import Information from '../../Components/Home/Information/Information.jsx';
 import Content from '../../Components/Home/Content/Content.jsx';
 
 //Main function
-function Main({loggedIn, setLoggedIn}){
+function Main({loggedIn, setLoggedIn, setCurrentTab }){
     return (
         <MainContent>
-            <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+            <Header 
+                loggedIn={loggedIn}
+                setLoggedIn={setLoggedIn}
+                setCurrentTab={setCurrentTab} />
             <Banner />
             <Information />
             <Content />
@@ -22,6 +25,6 @@ function Main({loggedIn, setLoggedIn}){
 
 const MainContent = styled.div`
     display: grid;
-`
+`;
 
 export default Main;

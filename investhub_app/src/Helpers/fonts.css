@@ -54,3 +54,9 @@ src: local('Vision Bold'), url(../Assets/fonts/Vision-Bold.otf) format('opentype
                                 'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+    font-family: 'Vision Light Italic';
+    src: local('Vision Light Italic'), url(../Assets/fonts/Vision-LightItalic.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
