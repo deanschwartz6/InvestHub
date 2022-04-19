@@ -24,19 +24,19 @@ function Header({ loggedIn, setCurrentTab }){
         <HeaderContainer>
             <ImgLogo onClick={goHome} src={logo}  />
             <MiddleContent>
-                <ButtonLeft onClick={startInvesting} >Start Investing</ButtonLeft>
+                <ButtonLeft onClick={startInvesting} >START INVESTING</ButtonLeft>
                 <Input />
                 <LeftNavH4>INVESTHUBCONNECTS</LeftNavH4>
             </MiddleContent>
             <RightNav>
-                <StyledNavLink>Raise Capital</StyledNavLink>
+                <StyledNavLink>RAISE CAPITAL</StyledNavLink>
                 {loggedIn ?
                     <LoggedInBubble>
                         <StyledP>A</StyledP>
                         <CaretDownFill size={15}/>
                     </LoggedInBubble>
-                :<><LoginButton id="log" onClick={loginClickHandler}>Login</LoginButton>
-                 <SignUpButton id="sign" onClick={loginClickHandler}>Sign Up</SignUpButton></>}
+                :<><LoginButton id="log" onClick={loginClickHandler}>LOGIN</LoginButton>
+                 <SignUpButton id="sign" onClick={loginClickHandler}>SIGN UP</SignUpButton></>}
             </RightNav>
         </HeaderContainer>
     );
@@ -114,7 +114,7 @@ const LoginButton = styled.button`
     border-color: #f0EFF3;
     font-size: 1rem;
     cursor: pointer;
-    font-family: Noah Bold;
+    font-family: Noah Regular;
 `;
 
 const SignUpButton = styled.button`
@@ -124,7 +124,7 @@ const SignUpButton = styled.button`
     border: solid;
     border-color: #f0EFF3;
     cursor: pointer;
-    font-family: Noah Bold;
+    font-family: Noah Regular;
 `
 const LoggedInBubble = styled.div`
     margin-right: 1.5em;

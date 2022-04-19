@@ -11,7 +11,7 @@ import UserIcon from '../Assets/user-icon-login.png';
 function Login({ setLoggedIn, currentTab, setCurrentTab }){
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
-        name: "",
+        full_name: "",
         email: "",
         password: "",
     });
@@ -22,11 +22,18 @@ function Login({ setLoggedIn, currentTab, setCurrentTab }){
     };
     const rememberMeHandler = () => console.log("Remember me checked");
     const newsletterCheckHandler = () => console.log("Newsletter clicked");
-    const signUpSubmit = (event) => {
+    const signUpSubmit = async (event) => {
         event.preventDefault();
-        console.log(formData);
+        const requestConfig = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        };
+        const response = await fetch('http://localhost:5000/logins', requestConfig);
+        const data = await response.json();
+        console.log("Fetched:", data);
         setFormData({
-            name: "",
+            full_name: "",
             email: "",
             password: "",
         });
@@ -82,16 +89,28 @@ function Login({ setLoggedIn, currentTab, setCurrentTab }){
                     ?<>
                         <StyledDiv>
                             <Card>
-                                <LinkedInIcon src={LinkedIn} />
-                                <Text>SIGN UP WITH LINKEDIN</Text>
+                                <WrapA>
+                                    <LinkedInIcon src={LinkedIn} />
+                                </WrapA>
+                                <WrapB>
+                                    <Text>SIGN UP WITH LINKEDIN</Text>
+                                </WrapB>
                             </Card>
                             <Card>
-                                <GoogleIcon src={Google} />
-                                <Text>SIGN UP WITH GOOGLE</Text>
+                                <WrapA>
+                                    <GoogleIcon src={Google} />
+                                </WrapA>
+                                <WrapB>
+                                    <Text>SIGN UP WITH GOOGLE</Text>
+                                </WrapB>
                             </Card>
                             <Card>
-                                <AppleIcon src={Apple} />
-                                <Text>SIGN UP WITH APPLE</Text>
+                                <WrapA>
+                                    <AppleIcon src={Apple} />
+                                </WrapA>
+                                <WrapB>
+                                    <Text>SIGN UP WITH APPLE</Text>
+                                </WrapB>
                             </Card>
                         </StyledDiv>
                         <MiddleDivSM>
@@ -100,7 +119,7 @@ function Login({ setLoggedIn, currentTab, setCurrentTab }){
                             <StyledSpan><StyledHr /></StyledSpan>
                         </MiddleDivSM>
                         <StyledForm onSubmit={signUpSubmit} >
-                            <StyledInput id="name" type="text" name="name" onChange={formChange} value={formData.name} placeholder="Full Name" required />
+                            <StyledInput id="full_name" type="text" name="full_name" onChange={formChange} value={formData.full_name} placeholder="Full Name" required />
                             <StyledInput id="email" type="email" name="email" onChange={formChange} value={formData.email} placeholder="Email" required />
                             <StyledInput id="password" type="password" name="email" onChange={formChange} value={formData.password} placeholder="Password" required />
                             <CheckboxDiv>
@@ -238,15 +257,12 @@ const StyledDiv = styled.div`
 const Card = styled.div`
     background-color: #CCCCCC;
     display: flex;
-    align-items: center;
     margin: 0em 5em;
-    gap: .9em;
     cursor: pointer;
 `;
 
 const LinkedInIcon = styled.img`
-    margin-left: 1.5em;
-    width: 9%;
+    width: 37%;
 `;
 
 const Text = styled.p`
@@ -257,13 +273,11 @@ const Text = styled.p`
 `;
 
 const GoogleIcon = styled.img`
-    margin-left: 1.5em;
-    width: 9%;
+    width: 38%;
 `;
 
 const AppleIcon = styled.img`
-    margin-left: 1.5em;
-    width: 8%;
+    width: 35%;
 `;
 
 const MiddleDivSM = styled.div`
@@ -324,8 +338,9 @@ const StyledSubmit = styled.input`
     border: none;
     font-family: Noah Bold;
     font-size: 1em;
-    padding: .3em 1em;
+    padding: .4em 1em;
     margin: 1em 0em;
+    cursor: pointer;
 `;
 
 const CheckboxTwoWrapper = styled.div`
@@ -403,6 +418,19 @@ const LoginSubmit = styled.input`
     font-family: Noah Bold;
     font-size: 1.2em;
     cursor: pointer;
+`;
+
+const WrapA = styled.div`
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+`;
+
+const WrapB = styled.div`
+    width: 75%;
+    display: flex;
+    align-items: center;
 `;
 
 export default Login;

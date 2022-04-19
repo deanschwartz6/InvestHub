@@ -2,10 +2,27 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Header from '../../Components/Home/Header/Header';
 import SubNavHeader from '../../Components/InvestPage/SubNavHeader/SubNavHeader';
+import WatchList from '../../Components/InvestPage/WatchlistTab/WatchList';
+import Portfolio from '../../Components/InvestPage/PortfolioTab/Portfolio';
+import Cash from '../../Components/InvestPage/CashTab/Cash';
+import Banks from '../../Components/InvestPage/BanksTab/Banks';
+import GetGive from '../../Components/InvestPage/GetGiveTab/GetGive';
+import Settings from '../../Components/InvestPage/SettingsTab/Settings';
 
 function Invest({ loggedIn, setLoggedIn, setCurrentTab }){
     const [activeTab, setActiveTab] = useState("1");
-    console.log(loggedIn)
+    const correctTab = () => {
+        switch(activeTab) {
+          case "1":   return <WatchList />;
+          case "2":   return <Portfolio />;
+          case "3": return <Cash />;
+          case "4":  return <Banks />;
+          case "5":  return <GetGive />;
+          case "6":  return <Settings />;
+          default:      return <h1>Contact Support Site Broken</h1>
+        }
+      }
+
     if(loggedIn){
         return(
             <ContentWrapper>
@@ -15,6 +32,7 @@ function Invest({ loggedIn, setLoggedIn, setCurrentTab }){
                     setCurrentTab={setCurrentTab} />
                 <ContentArea>
                     <SubNavHeader activeTab={activeTab} setActiveTab={setActiveTab} />
+                    {correctTab(activeTab)}
                 </ContentArea>
             </ContentWrapper>
         );
@@ -33,7 +51,10 @@ function Invest({ loggedIn, setLoggedIn, setCurrentTab }){
     }
 }
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.div`
+    background-color: #F0EFF3;
+    min-height: 80em;
+`;
 
 const ContentArea = styled.div``;
 
